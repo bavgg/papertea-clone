@@ -31,6 +31,9 @@
 
   --primary-color: #D1E3B2;
   --neutral-color: #F5F6F3;
+  --card-color: #F6F5F4;
+
+
   
 
   /* fonts */
@@ -41,10 +44,17 @@
   font-size: 1rem;
   font-style: normal;
 
+  --color-neutral-text: #484848;
+  --color-neutral-text2: #808080;
+
+  
+
   /* layout */
   --container-gutter: 48px;
 
+}
 
-  
+.font-serif {
+  font-family: "Playfair Display";
 }
 
