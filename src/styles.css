@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root, * {
+  --primary-color: #D1E3B2;
+  --neutral-color: #F5F6F3;
+
+  font-family: 'Montserrat';
+
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  --layout-width: 1280px; /* Example width for max-w */
+
+  /* colors */
+  --color-beige: #CCCCB4;
+  --color-light-green: #B8D2C5;
+  --color-pastel-green: #C5DE9A;
+  --color-pale-pink: #F7CDD7;
+  --color-bright-green: #80B637;
+  --color-bright-red: #FF6E70;
+  --color-light-purple: #CEB1D0;
+  --color-aqua: #7ACEC4;
+  --color-light-gray: #D9D9D9;
+  --color-light-yellow: #FADD7F;
+  --color-pink: #F889BE;
+  --color-tan: #E8BB95;
+
+  --primary-color: #D1E3B2;
+  --neutral-color: #F5F6F3;
+  
+
+  /* fonts */
+
+  /* base font */
+  font-family: 'Montserrat';
+  /* font-weight: 400; */
+  font-size: 1rem;
+  font-style: normal;
+
+  /* layout */
+  --container-gutter: 48px;
+
+
+  
+}
+
