@@ -1,0 +1,24 @@
+<app-main-header
+  [title]="'Test'"
+  [description]="
+    'Cillum test voluptate veniam ea cupidatat eiusmod ut culpa consectetur culpa cillum.'
+  "
+  [filters]="['Beauty', 'Fragrances', 'Skin-care']"
+></app-main-header>
+
+<div class="mt-8"></div>
+
+<div class="grid grid-cols-4 gap-4">
+  @for(product of products; track product) {
+    <app-card
+      [thumbnail]="product.thumbnail"
+      [category]="
+        product.category.charAt(0).toUpperCase() + product.category.slice(1)
+      "
+      [title]="product.title"
+      [description]="product.description.substring(0, 60)"
+      [price]="product.price"
+    ></app-card>
+  }
+</div>
+

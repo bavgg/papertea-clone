@@ -1,0 +1,20 @@
+<!-- header -->
+<div class="flex flex-col gap-2">
+  <h1 class="playfair text-5xl font-light">Your all-time favorites</h1>
+  <p class="text-lg">Discover our bestsellers now</p>
+</div>
+
+<div class="mt-10"></div>
+
+<!-- product list -->
+<div class="grid grid-cols-4 gap-4">
+  @for(product of products; track product.title) {
+  <app-card
+    [thumbnail]="product.thumbnail"
+    [category]="product.category.charAt(0).toUpperCase() + product.category.slice(1)"
+    [title]="product.title"
+    [description]="product.description.substring(0, 60)"
+    [price]="product.price"
+  ></app-card>
+  }
+</div>
