@@ -9,11 +9,7 @@ import { CheckboxComponent } from '../checkbox/checkbox.component';
   styleUrl: './main-header.component.css'
 })
 export class MainHeaderComponent {
-  @Input() title!: string;
-  @Input() description!: string;
-  @Input() filters!: string[];
-
-  // title = "Test";
-  // description = "Voluptate aute proident aliqua excepteur.";
-  // filters = [ "Category1", "Category2", "Category3 "];
+  @Input({required: true}) title!: string;
+  @Input({required: true}) description!: string;
+  @Input({required: true}) categories!: string[];
 }

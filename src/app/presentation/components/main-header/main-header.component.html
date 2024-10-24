@@ -4,13 +4,13 @@
     <h1 class="playfair text-5xl font-light">{{ title }}</h1>
     <p class="text-lg">{{ description }}</p>
   </div>
-  
+
   <div class="mt-8"></div>
 
   <!-- filters -->
-  <div class="flex gap-2">
-    @for(filter of filters; track filter) {
-      <app-checkbox [title]="filter"></app-checkbox>
+  <div class="flex gap-2 flex-wrap">
+    @for(category of categories; track category) {
+    <app-checkbox [category]="category"></app-checkbox>
     }
   </div>
 </div>

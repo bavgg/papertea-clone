@@ -1,4 +1,13 @@
-<div class="flex gap-2 border border-black px-6 py-2 w-fit ">
-  <div class="border border-black w-5 h-5 my-auto"></div>
-  <p>{{ title }}</p>
+<div
+  (click)="onClick()"
+  class="flex gap-2 border border-black px-6 py-2 w-fit nowhi cursor-pointer hover:bg-[#E5E5E5]"
+>
+  <div
+    class="border border-black w-5 h-5 my-auto p-[2px] flex justify-center items-center"
+  >
+    @if(this.stateService.selectedCategory() === this.category) {
+    <div class="w-3 h-3 bg-black"></div>
+    }
+  </div>
+  <p class="whitespace-nowrap">{{ category }}</p>
 </div>

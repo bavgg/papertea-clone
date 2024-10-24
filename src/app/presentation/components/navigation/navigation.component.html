@@ -1,7 +1,7 @@
 <nav>
   <!-- logo -->
    <div class="font-bold text-3xl tracking-widest px-[var(--container-gutter)] text-center my-3">
-    <h1>PAPER & TEA</h1>
+    <h1>ALL IN ONE</h1>
    </div>
 
   <!-- navigation links -->
@@ -9,21 +9,16 @@
       <div class=" mx-[var(--container-gutter)] py-6 flex">
 
         <!-- left -->
-        <!-- <div class="flex gap-11 font-medium mr-auto">
-          @for(category of categories; track category.name) {
-            <div>{{ category.name }}</div>
-          }
-        </div> -->
+
         <div class="flex gap-8 font-medium mr-auto">
-          <div>Beauty & Personal Care</div>
-          <div>Fashion & Accessories</div>
-          <div>Electronics & Gadgets</div>
-          <div>Home & Living</div>
-          <div>Automotive</div>
-          <div>Sports & Outdoors</div>
-          <div>Groceries</div>
-          <!-- <div class="font-light">Discover</div>
-          <div class="font-light">Magazine</div> -->
+          <a routerLink="categories/beauty" routerLinkActive="active">Beauty & Personal Care</a>
+          <a routerLink="categories/fashion">Fashion & Accessories</a>
+          <a routerLink="categories/electronics">Electronics & Gadgets</a>
+          <a routerLink="categories/home">Home & Living</a>
+          <a routerLink="categories/automotive">Automotive</a>
+          <a routerLink="categories/sports">Sports & Outdoors</a>
+          <a routerLink="categories/groceries">Groceries</a>
+
         </div>
 
         <!-- right -->
