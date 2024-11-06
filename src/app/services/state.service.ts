@@ -8,5 +8,6 @@ export class StateService {
   products = signal<Product[]>([]);
   filteredProducts = signal<Product[]>([]);
   selectedCategory = signal<string>("");
+  cartOpened = signal<boolean>(false);
   constructor() { }
 }

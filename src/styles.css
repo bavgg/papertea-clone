@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root, * {
-  --primary-color: #D1E3B2;
-  --neutral-color: #F5F6F3;
 
-  font-family: 'Montserrat';
-
-  font-weight: 400;
-  font-style: normal;
-} */
 
 * {
   --layout-width: 1280px; /* Example width for max-w */
@@ -32,6 +24,7 @@
   --primary-color: #D1E3B2;
   --neutral-color: #F5F6F3;
   --card-color: #F6F5F4;
+  --input-color: #EEE;
 
   --hover-color: #E5E5E5;
 

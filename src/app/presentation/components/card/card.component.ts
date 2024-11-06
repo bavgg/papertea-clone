@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Renderer2 } from '@angular/core';
+import { StateService } from '../../../services/state.service';
 
 @Component({
   selector: 'app-card',
@@ -13,4 +14,11 @@ export class CardComponent {
   @Input({ required: true }) title!: string;
   @Input({ required: true }) description!: string;
   @Input({ required: true }) price!: number;
+
+  constructor(private stateService: StateService, private renderer: Renderer2) {}
+
+  bagClicked() {
+    this.renderer.setStyle(document.body, 'overflow', 'hidden');
+    this.stateService.cartOpened.set(true);
+  }
 }

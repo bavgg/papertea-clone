@@ -1,0 +1,48 @@
+<div [ngClass]="this.stateService.cartOpened() ? 'cart-opened' : 'cart-closed'" class=" cart right-0 top-0 fixed flex flex-col w-[500px] h-full bg-white">
+
+  <!-- overlay -->
+   <span class="bg-black absolute opacity-10 h-[100vh] w-[100vw] right-full"></span>
+
+  <div class="px-8 py-4 flex justify-between">
+    <h1 class="mb-4">Cart</h1>
+
+    <!-- close -->
+    <svg (click)="onClose()" class=" cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m257.5-239-18-18.5 222-222.5-222-222.5 18-18.5L480-498.5 702.5-721l18 18.5-222 222.5 222 222.5-18 18.5L480-461.5 257.5-239Z"/></svg>
+  </div>
+
+  
+
+  <div class="flex flex-col gap-4 overflow-y-scroll">
+    <div class="bg-[var(--primary-color)] gap-2 flex px-8 py-4 mb-4 justify-center items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M225.01-210q-40.76 0-69.38-29.04Q127-268.08 127-308.5H81v-377.65q0-24.29 16.27-40.82 16.26-16.53 41.23-16.53H654v138h81.5l144 194v103H821q0 40.42-29.11 69.46Q762.78-210 722.01-210q-40.76 0-69.38-29.04Q624-268.08 624-308.5H324q0 41-29.11 69.75T225.01-210Zm.24-25.5q30.25 0 51.75-21.25t21.5-51.75q0-30.5-21.46-51.75-21.47-21.25-51.54-21.25-30.5 0-51.75 21.25T152.5-308.5q0 30.5 21.25 51.75t51.5 21.25ZM106.5-334H130q5.5-29 33-50.75t62.5-21.75q33 0 61.25 21T321-334h307.5v-384h-490q-12.5 0-22.25 10t-9.75 22v352Zm615.75 98.5q30.25 0 51.75-21.25t21.5-51.75q0-30.5-21.46-51.75T722.5-381.5q-30.5 0-51.75 21.25T649.5-308.5q0 30.5 21.25 51.75t51.5 21.25ZM654-413h193.5l-127-167H654v167ZM367.5-526Z"/></svg> 
+      <h1>You get free shipping</h1>
+    </div>
+
+    <app-cart-item></app-cart-item>
+    <app-cart-item></app-cart-item>
+    <app-cart-item></app-cart-item>
+    <app-cart-item></app-cart-item>
+  </div>
+
+  <footer class="px-8 py-4 bg-[var(--card-color)] flex flex-col gap-3">
+    <div class="flex justify-between items-center">
+      <p>Shipping</p>
+      <p>€ 0,00</p>
+    </div>
+
+    <div class="flex justify-between items-center">
+      <p>Total incl. VAT</p>
+      <p>€ 246,00</p>
+    </div>
+
+    <div class="bg-black flex justify-center items-center py-3 text-white font-normal">
+      Checkout
+    </div>
+
+    <div class="flex justify-center items-center">
+      <p class="text-xs font-light">Gift Cards can be redeemed at checkout.</p>
+    </div>
+
+  </footer>
+  
+</div>
